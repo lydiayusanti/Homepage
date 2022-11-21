@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               itemKategori(
                 title: 'Maps',
-                icon: 'assets/icons/addmaps.png',
+                icon: '/icons/Vector.png',
               ),
               Padding(
                   padding: EdgeInsets.only(
