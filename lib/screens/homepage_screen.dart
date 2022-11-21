@@ -163,27 +163,36 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 10,
           ),
-          Row(
-            children: [
-              itemMenu(
-                iconn: '/icons/cctvg.png',
-                titlee: 'Mataram',
-                titlee1: '2 KM ke CCTV di jl.',
-                titlee2: 'Majapahit - pertigaan',
-              ),
-              itemMenu(
-                iconn: '/icons/cctvg.png',
-                titlee: 'Ampenan',
-                titlee1: '2 KM ke CCTV di jl.',
-                titlee2: 'Majapahit - pertigaan',
-              ),
-              itemMenu(
-                iconn: '/icons/cctvg.png',
-                titlee: 'Rembiga',
-                titlee1: '2 KM ke CCTV di jl.',
-                titlee2: 'Majapahit - pertigaan',
-              ),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Mataram',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Ampenan',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Rembiga',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Mataram',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+              ],
+            ),
           ),
           SizedBox(
             height: 20,
@@ -284,27 +293,36 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 5,
           ),
-          Row(
-            children: [
-              itemMenu(
-                iconn: '/icons/cctvg.png',
-                titlee: 'Mataram',
-                titlee1: '2 KM ke CCTV di jl.',
-                titlee2: 'Majapahit - pertigaan',
-              ),
-              itemMenu(
-                iconn: '/icons/cctvg.png',
-                titlee: 'Ampenan',
-                titlee1: '2 KM ke CCTV di jl.',
-                titlee2: 'Majapahit - pertigaan',
-              ),
-              itemMenu(
-                iconn: '/icons/cctvg.png',
-                titlee: 'Rembiga',
-                titlee1: '2 KM ke CCTV di jl.',
-                titlee2: 'Majapahit - pertigaan',
-              ),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Mataram',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Ampenan',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Rembiga',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+                itemMenu(
+                  iconn: '/icons/cctvg.png',
+                  titlee: 'Mataram',
+                  titlee1: '2 KM ke CCTV di jl.',
+                  titlee2: 'Majapahit - pertigaan',
+                ),
+              ],
+            ),
           ),
           SizedBox(
             height: 30,
@@ -334,7 +352,7 @@ class itemMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.only(left: 60, top: 20),
+        padding: const EdgeInsets.only(left: 80, top: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -345,6 +363,7 @@ class itemMenu extends StatelessWidget {
               width: 42,
               child: Image.asset(
                 iconn,
+                fit: BoxFit.cover,
                 color: Color(0xff147B01),
               ),
             ),
